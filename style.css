@@ -17,6 +17,9 @@ li,a{
     padding: 20px;
     background-color: black;
 }
+.navigation-content li a{
+    color: #fdfdfd;
+}
 .header h2{
     color:white;
 }
