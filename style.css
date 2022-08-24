@@ -8,6 +8,7 @@ li,a{
     text-decoration: none;
     list-style: none;
 }
+/* ------ navigation bar ----- */
 .navigation-content{
     width: 100%;
     display: grid;
@@ -35,4 +36,32 @@ li,a{
 .nav-links li a:hover{
     color: #e45465;
 }
-
+/* --------category------- */
+.category{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 10%;
+    margin:10px;
+    overflow-x: auto;
+}
+.cat-items{
+    display: flex;
+    justify-content: center;
+}
+.cat-items span{
+    display: flex;
+    align-items: center;    
+    font-size: 15px;
+    border: 1px black;
+    padding: 5px 12px 5px 12px;
+    border-radius: 5px;
+    background-color: #252526;
+    color: white;
+    font-weight: lighter;
+}
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+}
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
