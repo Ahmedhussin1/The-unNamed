@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
+li,a{
+    text-decoration: none;
+    list-style: none;
+}
+.navigation-content{
+    padding-right: 200px;
+    padding-left: 200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px;
+    background-color: black;
+}
+.header h2{
+    color:white;
+}
+.nav-links ul{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
