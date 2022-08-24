@@ -9,22 +9,30 @@ li,a{
     list-style: none;
 }
 .navigation-content{
-    padding-right: 200px;
-    padding-left: 200px;
     width: 100%;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    padding: 20px;
-    background-color: black;
-}
-.navigation-content li a{
-    color: #fdfdfd;
+    grid-template-columns: 3fr 1fr 1fr;
+    background-color: #252526;
+    height: 60px;
 }
 .header h2{
-    color:white;
+    color:#edeade;
+    margin-left: 250px;
 }
-.nav-links ul{
+.header{
+    display: flex;
+    align-items: center;
+}
+.nav-links{
     display: flex;
     justify-content: space-evenly;
-    color: white;
+    align-items: center;
 }
+.nav-links li a{
+    color: #edeade;
+    font-size: 15px;
+}
+.nav-links li a:hover{
+    color: #e45465;
+}
+
