@@ -71,7 +71,6 @@ body{
     display: flex;
     justify-content: center;
     border: none;
-    
 }
 .cat-items a:hover{
     
@@ -120,6 +119,7 @@ body{
 }
 .head h2{
     color: #edeade;
+    cursor:default;
 }
 .head a{
     color: #edeade;
@@ -132,9 +132,9 @@ body{
 .content-ele{
     display: flex;
     flex-direction: column;
-    background-color:#2a2a2a;
     background-color: #1a1a1a;
     transition: .3s ease;
+    border-radius: 7px;
 }
 .content-ele:hover{
     background-color:hsla(0,0%,100%,.07);
@@ -145,10 +145,11 @@ body{
     display: flex;
 }
 .content-img img{
-    /* height: 100px; */
+    height: 193.56px;
     width: 90%;
-    height: auto;
+    /* height: auto; */
     padding-top: 10px;
+    object-fit: fill;
 }
 .content-des{
     padding: 10px;
@@ -161,10 +162,16 @@ body{
     font-weight: bold;
     letter-spacing: 1px;
 }
+.playlist-name:hover{
+    color: #faf9f5;
+}
 .playlist-maker{
     color: #888888;
     font-size: 15px;
     font-weight: 300;
+}
+.playlist-maker:hover{
+    text-decoration: underline;
 }
 .playlist-src{
     color: #888888;
