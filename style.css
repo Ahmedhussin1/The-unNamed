@@ -283,3 +283,37 @@ body{
     color: #edeade;
     grid-row-start: 3;
 }
+/* -----dialog miniplayer---- */
+.player::backdrop{
+    background: rgb(0 0 0 / 0.5);
+}
+.player{
+    position: fixed;
+    border: none;
+    border-radius: 10px;
+    background-color:#252526;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 30%; 
+    margin-left: -150px;
+    margin-top: -150px;
+    
+}
+.popup-player-info{
+    display: flex;
+    flex-direction: column;
+}
+.profile-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.popup-player-profile{
+    border-radius: 50%;
+    width: 20%;
+    height: 80%;
+    padding: 0;
+    border: 2px solid #e45465;
+    justify-content: center;
+}

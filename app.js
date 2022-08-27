@@ -101,7 +101,11 @@ document.addEventListener("click", e => {
 //   ------------------------------------------
 const player = document.querySelector("#player");
 const openPlayer = document.querySelector(".open-player");
+const closePlayer = document.querySelector(".close-btn");
 openPlayer.addEventListener("click", ()=>{
     player.showModal();
     console.log('test')
+})
+closePlayer.addEventListener("click",()=>{
+    player.close();
 })
