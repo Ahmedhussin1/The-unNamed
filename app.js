@@ -99,18 +99,26 @@ document.addEventListener("click", e => {
     }
   }
 //   ------------------------------------------
-const player = document.querySelector(".player");
-const openPlayer = document.querySelector(".open-player");
-const closePlayer = document.querySelector(".close-btn");
+const player = document.querySelectorAll(".player");
+const openPlayer = document.querySelectorAll(".open-player");
+const closePlayer = document.querySelectorAll(".close-btn");
 const body =document.getElementById("body");
-// openPlayer.forEach((btn,idx)=>{
-//   let playercounter = player[idx]; 
-// })
-openPlayer.addEventListener("click", ()=>{
-    player.showModal();
-    body.style.overflow='hidden'
+
+openPlayer.forEach((btn,idx)=>{
+  let playercounter = player[idx];
+  btn.addEventListener('click',()=>{
+      playercounter.showModal();
+      body.style.overflow='hidden'
+  })
 })
-closePlayer.addEventListener("click",()=>{
-    player.close();
+closePlayer.forEach((btn,idx)=>{
+  let closecounter=player[idx];
+  btn.addEventListener('click',()=>{
+    closecounter.close();
     body.style.overflow='auto'
+  })
 })
+// btn.addEventListener("click",()=>{
+//     player.close();
+//     body.style.overflow='auto'
+// })
