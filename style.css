@@ -288,26 +288,47 @@ body{
     background: rgb(0 0 0 / 0.5);
 }
 .player{
-    position: fixed;
     border: none;
     border-radius: 10px;
     background-color:#252526;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     padding: 20px;
-    position: absolute;
     left: 50%;
     top: 30%; 
     margin-left: -150px;
     margin-top: -150px;
-    
+}
+.profile-pic{
+  display: flex;
+  justify-content: space-around;
 }
 .popup-player-info{
     display: flex;
     flex-direction: column;
-}
-.profile-name{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+}
+.maker-name{
+  margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.popup-playlist-maker{
+    text-decoration: none;
+    color: #edeade;
+}
+.popup-playlist-maker:hover{
+  text-decoration: underline;
+}
+.popup-playlist-src{
+  color: #edeade;
+}
+.popup-playlist-src:hover{
+  text-decoration: underline;
+}
+.profile-img-container{
+  display: flex;
+  justify-self:center;
 }
 .popup-player-profile{
     border-radius: 50%;
@@ -315,5 +336,22 @@ body{
     height: 80%;
     padding: 0;
     border: 2px solid #e45465;
+}
+.spotify-player{
+  height: 300px;
+  margin-top: 10px;
+}
+.popup-btn{
+    margin-top: 10px;
+    display: flex;
     justify-content: center;
+}
+.close-btn{
+    padding: 5px 30px;
+    background-color:#edeade;
+    border: none;
+    color: #121212;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
