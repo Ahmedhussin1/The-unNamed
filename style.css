@@ -293,10 +293,11 @@ body{
     background-color:#252526;
     box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     padding: 20px;
-    left: 50%;
+    left: 37%;
     top: 30%; 
     margin-left: -150px;
     margin-top: -150px;
+    width: 50%;
 }
 .profile-pic{
   display: flex;
