@@ -99,14 +99,16 @@ document.addEventListener("click", e => {
     }
   }
 //   ------------------------------------------
-const player = document.querySelector("#player");
+const player = document.querySelector(".player");
 const openPlayer = document.querySelector(".open-player");
 const closePlayer = document.querySelector(".close-btn");
 const body =document.getElementById("body");
+// openPlayer.forEach((btn,idx)=>{
+//   let playercounter = player[idx]; 
+// })
 openPlayer.addEventListener("click", ()=>{
     player.showModal();
     body.style.overflow='hidden'
-    console.log('test')
 })
 closePlayer.addEventListener("click",()=>{
     player.close();

@@ -340,6 +340,7 @@ body{
 .spotify-player{
   height: 300px;
   margin-top: 10px;
+  border: 1px solid #252526;
 }
 .popup-btn{
     margin-top: 10px;
