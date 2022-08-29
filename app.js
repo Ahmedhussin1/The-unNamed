@@ -118,7 +118,18 @@ closePlayer.forEach((btn,idx)=>{
     body.style.overflow='auto'
   })
 })
-// btn.addEventListener("click",()=>{
-//     player.close();
-//     body.style.overflow='auto'
-// })
+// -------------------like btn-----------------------
+const like = document.querySelectorAll('.fa-heart');
+like.forEach((btn,idx)=>{
+  let likecounter =like[idx];
+  let count=1;
+  btn.addEventListener('click',()=>{
+    count++;
+    if(count%2==0){
+      likecounter.style.color='red';
+    }
+    else{
+      likecounter.style.color='#edeade'
+    }
+  })
+})
