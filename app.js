@@ -103,7 +103,7 @@ const player = document.querySelectorAll(".player");
 const openPlayer = document.querySelectorAll(".open-player");
 const closePlayer = document.querySelectorAll(".close-btn");
 const body =document.getElementById("body");
-
+// --------------open player-----------------------
 openPlayer.forEach((btn,idx)=>{
   let playercounter = player[idx];
   btn.addEventListener('click',()=>{
@@ -111,6 +111,7 @@ openPlayer.forEach((btn,idx)=>{
       body.style.overflow='hidden'
   })
 })
+// -----------close player--------------------------
 closePlayer.forEach((btn,idx)=>{
   let closecounter=player[idx];
   btn.addEventListener('click',()=>{
@@ -146,5 +147,26 @@ plus.forEach((btn,idx)=>{
     else{
       plusCounter.style.color='#edeade'
     }
+  })
+})
+// ------------------share dialog------------------------
+const openShare = document.querySelectorAll('.fa-share-nodes');
+const list = document.querySelectorAll('.share-list');
+const closeShare = document.querySelectorAll(".close-share");
+// ---------------open share--------------------------
+openShare.forEach((btn,idx)=>{
+  let listCounter = list[idx];
+  btn.addEventListener('click',()=>{
+    listCounter.showModal();
+    body.style.overflow='hidden'
+  })
+})
+// ----------------close share---------------------
+closeShare.forEach((btn,idx)=>{
+  let closeCounter=list[idx];
+  btn.addEventListener('click',()=>{
+    closeCounter.close();
+    body.style.overflow='auto'
+
   })
 })

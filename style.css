@@ -275,7 +275,7 @@ body{
     text-decoration: underline;
 }
 .playlist-src{
-    color: #888888;
+    color: #919191;
     font-size: 10px;
     font-weight: 100;
     letter-spacing: 1px;
@@ -296,6 +296,68 @@ body{
 .content-btn i{
   padding: 10px;
   color: #edeade;
+}
+/* ----------------share dialog------------------- */
+.header-close{
+  display: flex;
+}
+.header-close h2{
+  color: #edeade;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.close-share{
+  color: #edeade;
+  margin-left: auto;
+}
+.share-list-img{
+  margin-top: 10px;
+  display: flex; 
+  justify-content:flex-start;
+}
+.share-playlist-des{
+  display: grid;
+  margin-left: 20px;
+  color: #edeade;
+  align-content: center;
+  grid-template-rows: .2fr .2fr;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+.share-playlist-des p:nth-child(2){
+  font-weight: 100;
+  color: #919191;
+}
+.share-playlist-des p:nth-child(2):hover{
+  text-decoration: underline;
+}
+.share-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+.share-btn{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.share-to{
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color:transparent;
+  border-color: #e45465;
+  color: #edeade;
+}
+.fa-brands{
+  transition: transform .2s;
+}
+.fa-brands:hover{
+  transform: scale(1.2);
+}
+.share-to i{
+  color: #919191;
+  padding: 0 5px;
 }
 /* -----dialog miniplayer---- */
 .player::backdrop{
