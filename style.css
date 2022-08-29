@@ -224,9 +224,11 @@ body{
     height: 340px;
     max-height: 350px;
     display: inline-block;
+    transition: transform .2s;
 }
 .content-ele:hover{
     background-color:hsla(0,0%,100%,.07);
+    transform: scale(1.01);
 }
 
 .content-img{
@@ -397,7 +399,7 @@ hr{
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
-/* -----dialog miniplayer---- */
+/* -----dialog miniPlayer---- */
 .player::backdrop{
     background: rgb(0 0 0 / 0.5);
 }
