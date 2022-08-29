@@ -298,6 +298,18 @@ body{
   color: #edeade;
 }
 /* ----------------share dialog------------------- */
+.share-list{
+  border: none;
+  border-radius: 10px;
+  background-color:#252526;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  left: 41%;
+  top: 30%; 
+  margin-left: -150px;
+  margin-top: -150px;
+  width: 40%;
+}
 .header-close{
   display: flex;
 }

@@ -163,9 +163,9 @@ openShare.forEach((btn,idx)=>{
 })
 // ----------------close share---------------------
 closeShare.forEach((btn,idx)=>{
-  let closeCounter=list[idx];
+  let closeShareCounter=list[idx];
   btn.addEventListener('click',()=>{
-    closeCounter.close();
+    closeShareCounter.close();
     body.style.overflow='auto'
 
   })
