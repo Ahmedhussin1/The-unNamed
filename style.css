@@ -219,6 +219,11 @@ body{
     background-color: #1a1a1a;
     transition: .3s ease;
     border-radius: 7px;
+    width: 250px;
+    max-width: 250px;
+    height: 340px;
+    max-height: 350px;
+    display: inline-block;
 }
 .content-ele:hover{
     background-color:hsla(0,0%,100%,.07);
@@ -281,6 +286,16 @@ body{
     justify-content: space-evenly;
     color: #edeade;
     grid-row-start: 3;
+}
+.fa-solid{
+  transition: transform .2s;
+}
+.fa-solid:hover{
+  transform: scale(1.2);
+}
+
+.fa-plus:hover{
+  transform: scale(1.2);
 }
 .content-btn i{
   padding: 10px;
