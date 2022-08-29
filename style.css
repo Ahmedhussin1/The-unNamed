@@ -374,6 +374,29 @@ body{
   color: #919191;
   padding: 0 5px;
 }
+.share-in{
+  margin-top: 20px;
+}
+.share-in-header h2{
+  color: #edeade;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.friends{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:;
+}
+.friends img{
+  padding: 5px;
+  border-radius: 50%;
+}
+hr{
+  margin-top: 20px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
 /* -----dialog miniplayer---- */
 .player::backdrop{
     background: rgb(0 0 0 / 0.5);
