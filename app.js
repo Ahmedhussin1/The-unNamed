@@ -126,10 +126,25 @@ like.forEach((btn,idx)=>{
   btn.addEventListener('click',()=>{
     count++;
     if(count%2==0){
-      likecounter.style.color='red';
+      likecounter.style.color='#e45465';
     }
     else{
       likecounter.style.color='#edeade'
+    }
+  })
+})
+// ---------------add button-------------------------
+const plus = document.querySelectorAll('.fa-plus');
+plus.forEach((btn,idx)=>{
+  let plusCounter =plus[idx];
+  let count=1;
+  btn.addEventListener('click',()=>{
+    count++;
+    if(count%2==0){
+      plusCounter.style.color='#318CE7';
+    }
+    else{
+      plusCounter.style.color='#edeade'
     }
   })
 })

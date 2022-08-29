@@ -293,10 +293,6 @@ body{
 .fa-solid:hover{
   transform: scale(1.2);
 }
-
-.fa-plus:hover{
-  transform: scale(1.2);
-}
 .content-btn i{
   padding: 10px;
   color: #edeade;
