@@ -192,7 +192,9 @@ body{
 }
 .content{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    /* justify-content: flex-start;
+    flex-wrap: wrap; */
+    grid-template-columns: repeat(5,1fr); 
     gap: 10px
 }
 .head{
@@ -209,6 +211,7 @@ body{
 .head a{
     color: #edeade;
     font-size: 15px;
+    justify-items: flex-end;
 }
 .head a:hover{
     text-decoration: underline;
@@ -605,5 +608,13 @@ hr{
   }
   .header-close h2{
     font-size: 20px;
+  }
+  .head{
+    font-size: 15px;
+    grid-template-columns: 1fr .2fr;
+  }
+  .head a{
+    font-size: 10px;
+
   }
 }
