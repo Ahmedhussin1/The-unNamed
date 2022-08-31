@@ -170,3 +170,18 @@ closeShare.forEach((btn,idx)=>{
 
   })
 })
+const contactBtn=document.getElementsByClassName('.open-contact');
+
+// contactBtn.forEach((btn,idx)=>{
+  //   let contactCounter = contactList[idx];
+  //   btn.addEventListener('click',()=>{
+    //     console.log(contactCounter);
+    //     contactCounter.showModal();
+    //     body.style.overflow='hidden'
+    //   })
+    // })
+  const contactList = document.getElementsByClassName('.contact-list');
+  function openModel(){
+  contactList.showModal();
+  body.style.overflow='hidden';
+}

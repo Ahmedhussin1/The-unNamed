@@ -95,6 +95,11 @@ body{
     aspect-ratio: 16 / 9;
     padding: var(--img-gap);
     border-radius: 1rem;
+    transition: transform .2s;
+  }
+  .slider img:hover{
+    transform: scale(1.03);
+    /* -webkit-filter: blur(1px); */
   }
   
   .handle {
